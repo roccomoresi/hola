@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #c6e3b4;
+    font-family: 'Overlock', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #3B2411;
+    font-family: 'Overlock', sans-serif;
+    text-align: center;
+    margin-top: 80px;
+    justify-content: center;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.nav-bar a {
+    color: #3B2411;
+    text-decoration: none;
+    margin: 0 100px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: normal;
+    transition: background-color 0.3s, color 0.3s, padding 0.3s, border-radius 0.3s;
+    padding: 14px 24px;
+    border-radius: 30px;
+}
+
+.nav-bar a:hover {
+    background-color: #2C6931;
+    color: #333;
+    position: relative;
+    
+    
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.content img {
+    max-width: 30%;
+    height: auto;
+    flex: 1;
+}
+
+.content p {
+    color: #333;
+    font-size: 16px;
+    margin-left: 10px;
+    flex: 0.5;
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .nav-bar a {
+        margin: 10px 0;
+    }
+}
+
+main {
+    text-align: center;
+    margin: 30px;
+}
+
+.container {
+    display: inline-block;
+    text-align: center;
+    margin: 40px;
+    width: 30%;
+    max-width: 300px;
+    background-color: #D9D9D9;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 40px #2C693166;
+}
+
+.container img {
+    max-width: 100%;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.container img:hover {
+    transform: scale(1.3);
+}
+
+.container p {
+    color: #000;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+.home-datos p {
+    margin-bottom: 60px;
+    font-size: 30px;
+}
+
+main .home-datos {
+    margin: 90px;
+}
+
+/* Estilos para la cuadrícula de imágenes y descripciones */
+.image-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.image-container {
+    width: 30%;
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.image-container .image-content {
+    background-color: #D9D9D9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.image-container p {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Estilos para la sección de títulos y textos */
+.text-section {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-block {
+    position: relative;
+    width: 600px; /* Establece el ancho del contenedor según tus necesidades */
+    height: 200px; /* Establece la altura del contenedor según tus necesidades */
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+}
+
+
+.text-block h2 {
+    font-size: 24px;
+    margin-bottom: 60px;
+}
+
+.text-block p {
+    margin: 0;
+}
+
+.text-block img {
+    width: 150px;
+}
+
+.nav-bar img{
+
+    width: 90px;
+    height: 60px;
+    margin-left: 80px;
+    border-radius: 15px;
+}
+
+.text-block p img{
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    right: 170px;
+    bottom: 20px;
+}
+
+
+/* Estilos para la paleta de colores */
+.color-palette {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.color-box {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #000;
+    margin-right: 20px;
+    border-radius: 10px;
+    
+}
+
+.color-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold; /* Cambiado de font-size a font-weight para especificar el peso de la fuente */
+    text-shadow: 2px 2px 4px #000; /* Agregando sombra al texto */
+}
+
+
+
+
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #333; /* Cambia el color de fondo del footer */
+    color: #fff; /* Cambia el color del texto a blanco */
+    padding: 20px 0; /* Agrega relleno superior e inferior */
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-text {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-text h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-text p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.footer-text img {
+    max-width: 100px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.footer-text p a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
